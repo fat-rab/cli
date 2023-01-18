@@ -1,0 +1,29 @@
+{
+  "name": "shixw-cli",
+  "version": "1.0.5",
+  "description": "npm-sxw/shixw-cli",
+  "bin": {
+    "shixw-cli": "bin/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "compile": "babel src -d dist",
+    "watch": "npm run compile -- --watch"
+  },
+  "author": "sxw",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^9.5.0",
+    "download-git-repo": "^3.0.2",
+    "ini": "^3.0.1",
+    "inquirer": "^9.1.4",
+    "log-symbols": "^5.1.0",
+    "ora": "^6.1.2"
+  }
+}
